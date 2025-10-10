@@ -23,7 +23,6 @@ noise = SubResource("FastNoiseLite_vty1t")
 
 [resource]
 render_priority = 0
-next_pass = null
 shader = ExtResource("1")
 shader_parameter/speed = 2.0
 shader_parameter/tint_color = Color(0.113725, 0.913725, 0.721569, 1)
