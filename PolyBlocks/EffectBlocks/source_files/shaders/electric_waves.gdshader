@@ -1,3 +1,4 @@
+//electric_waves.gdshader
 shader_type spatial;
 render_mode blend_add, cull_disabled;
 

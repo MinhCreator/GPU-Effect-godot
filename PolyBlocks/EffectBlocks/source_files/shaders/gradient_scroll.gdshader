@@ -1,3 +1,4 @@
+//gradient_scroll.gdshader
 shader_type spatial;
 render_mode blend_mix, cull_disabled, diffuse_lambert, specular_schlick_ggx, depth_draw_opaque;
 

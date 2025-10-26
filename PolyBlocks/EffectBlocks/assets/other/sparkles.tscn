@@ -10,7 +10,7 @@ point_count = 4
 curve = SubResource("Curve_nm7us")
 
 [sub_resource type="Curve" id="Curve_eux2l"]
-max_value = 4.0
+_limits = [0.0, 4.0, 0.0, 1.0]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.134328, 3.71441), 0.0, 0.0, 0, 0, Vector2(0.20709, 3.30316), 0.0, 0.0, 0, 0, Vector2(0.330224, 4), 0.0, 0.0, 0, 0, Vector2(0.419776, 3.2232), 0.0, 0.0, 0, 0, Vector2(0.490672, 4), 0.0, 0.0, 0, 0, Vector2(0.617537, 3.029), 0.0, 0.0, 0, 0, Vector2(0.720149, 4), 0.0, 0.0, 0, 0, Vector2(0.772388, 3.05185), 0.0, 0.0, 0, 0, Vector2(0.833955, 3.62302), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 11
 
@@ -28,8 +28,8 @@ curve = SubResource("Curve_igpo3")
 emission_shape = 1
 emission_sphere_radius = 1.0
 gravity = Vector3(0, 0, 0)
-scale_min = 0.05000000074505806
-scale_max = 0.20000000298023224
+scale_min = 0.05
+scale_max = 0.2
 scale_curve = SubResource("CurveTexture_tc8vp")
 color = Color(0.921569, 0.698039, 0, 1)
 alpha_curve = SubResource("CurveTexture_71is6")
@@ -60,7 +60,7 @@ albedo_color = Color(1, 1, 1, 0.0470588)
 albedo_texture = ExtResource("1")
 emission_enabled = true
 emission = Color(0.641591, 0.577104, 0.387274, 1)
-emission_energy_multiplier = 1.4900000095367432
+emission_energy_multiplier = 1.49
 billboard_mode = 3
 billboard_keep_scale = true
 particles_anim_h_frames = 1

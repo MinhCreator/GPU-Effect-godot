@@ -1,8 +1,8 @@
-[gd_scene load_steps=28 format=3 uid="uid://bw5rix0opmpn2"]
+[gd_scene load_steps=28 format=4 uid="uid://bw5rix0opmpn2"]
 
 [ext_resource type="Material" uid="uid://cjgoj12p3pb0g" path="res://PolyBlocks/EffectBlocks/source_files/materials/fire_billboard.material" id="1"]
 [ext_resource type="Material" uid="uid://ks1kly3dfqvc" path="res://PolyBlocks/EffectBlocks/source_files/materials/smoke_billboard.material" id="2"]
-[ext_resource type="Script" path="res://PolyBlocks/EffectBlocks/source_files/scripts/light_flicker.gd" id="3"]
+[ext_resource type="Script" uid="uid://d0tvwudpva6qy" path="res://PolyBlocks/EffectBlocks/source_files/scripts/light_flicker.gd" id="3"]
 
 [sub_resource type="Gradient" id="Gradient_35pg8"]
 colors = PackedColorArray(0.94902, 0, 0, 1, 1, 0.776471, 0.0823529, 1)
@@ -11,7 +11,7 @@ colors = PackedColorArray(0.94902, 0, 0, 1, 1, 0.776471, 0.0823529, 1)
 gradient = SubResource("Gradient_35pg8")
 
 [sub_resource type="Curve" id="Curve_0rrya"]
-_data = [Vector2(0, 0.126098), 0.0, 0.2458299994468689, 0, 0, Vector2(0.623134, 0.700132), 2.7628300189971924, 2.7628300189971924, 0, 0, Vector2(1, 0), -4.9352898597717285, 0.0, 0, 0]
+_data = [Vector2(0, 0.126098), 0.0, 0.24583, 0, 0, Vector2(0.623134, 0.700132), 2.76283, 2.76283, 0, 0, Vector2(1, 0), -4.93529, 0.0, 0, 0]
 point_count = 3
 
 [sub_resource type="CurveTexture" id="CurveTexture_h47cw"]
@@ -45,11 +45,11 @@ _surfaces = [{
 "aabb": AABB(-1.15811, -1.02635, -4.7252e-08, 2.17129, 2.09224, 1.00998e-05),
 "format": 34896613377,
 "index_count": 18,
-"index_data": PackedByteArray(4, 0, 1, 0, 7, 0, 0, 0, 7, 0, 1, 0, 1, 0, 3, 0, 2, 0, 4, 0, 3, 0, 1, 0, 4, 0, 6, 0, 5, 0, 6, 0, 4, 0, 7, 0),
+"index_data": PackedByteArray("BAABAAcAAAAHAAEAAQADAAIABAADAAEABAAGAAUABgAEAAcA"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 8,
-"vertex_data": PackedByteArray(106, 147, 254, 255, 135, 2, 0, 0, 39, 67, 247, 238, 186, 2, 0, 0, 0, 0, 205, 128, 73, 1, 0, 0, 21, 36, 233, 36, 90, 0, 0, 0, 234, 161, 0, 0, 0, 0, 0, 0, 246, 235, 165, 54, 217, 0, 0, 0, 255, 255, 228, 122, 31, 1, 0, 0, 26, 240, 234, 187, 78, 1, 0, 0)
+"vertex_data": PackedByteArray("apP+/4cCAAAnQ/fuugIAAAAAzYBJAQAAFSTpJFoAAADqoQAAAAAAAPbrpTbZAAAA///keh8BAAAa8Oq7TgEAAA==")
 }]
 blend_shape_mode = 0
 
@@ -57,15 +57,15 @@ blend_shape_mode = 0
 resource_name = "particle_circle_particle_circle"
 _surfaces = [{
 "aabb": AABB(-1.15811, -1.02635, -4.7252e-08, 2.17129, 2.09224, 1.00998e-05),
-"attribute_data": PackedByteArray(0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255),
+"attribute_data": PackedByteArray("AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8="),
 "format": 34896613399,
 "index_count": 18,
-"index_data": PackedByteArray(4, 0, 1, 0, 7, 0, 0, 0, 7, 0, 1, 0, 1, 0, 3, 0, 2, 0, 4, 0, 3, 0, 1, 0, 4, 0, 6, 0, 5, 0, 6, 0, 4, 0, 7, 0),
+"index_data": PackedByteArray("BAABAAcAAAAHAAEAAQADAAIABAADAAEABAAGAAUABgAEAAcA"),
 "material": ExtResource("1"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 8,
-"vertex_data": PackedByteArray(106, 147, 254, 255, 135, 2, 254, 127, 39, 67, 247, 238, 186, 2, 254, 127, 0, 0, 205, 128, 73, 1, 254, 127, 21, 36, 233, 36, 90, 0, 254, 127, 234, 161, 0, 0, 0, 0, 254, 127, 246, 235, 165, 54, 217, 0, 254, 127, 255, 255, 228, 122, 31, 1, 254, 127, 26, 240, 234, 187, 78, 1, 254, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255)
+"vertex_data": PackedByteArray("apP+/4cC/n8nQ/fuugL+fwAAzYBJAf5/FSTpJFoA/n/qoQAAAAD+f/brpTbZAP5////keh8B/n8a8Oq7TgH+f/9/////f////3////9/////f////3////9/////f///")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_udcdq")
@@ -98,7 +98,7 @@ spread = 12.0
 initial_velocity_min = 1.0
 initial_velocity_max = 2.0
 gravity = Vector3(0, 4, 0)
-scale_min = 0.20000000298023224
+scale_min = 0.2
 scale_max = 0.5
 scale_curve = SubResource("CurveTexture_bgnyc")
 color = Color(0.414704, 0.414704, 0.414704, 0.219608)
@@ -112,15 +112,15 @@ turbulence_influence_over_life = SubResource("CurveTexture_er5xf")
 resource_name = "particle_circle_particle_circle"
 _surfaces = [{
 "aabb": AABB(-1.15811, -1.02635, -4.7252e-08, 2.17129, 2.09224, 1.00998e-05),
-"attribute_data": PackedByteArray(0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255),
+"attribute_data": PackedByteArray("AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8="),
 "format": 34896613399,
 "index_count": 18,
-"index_data": PackedByteArray(4, 0, 1, 0, 7, 0, 0, 0, 7, 0, 1, 0, 1, 0, 3, 0, 2, 0, 4, 0, 3, 0, 1, 0, 4, 0, 6, 0, 5, 0, 6, 0, 4, 0, 7, 0),
+"index_data": PackedByteArray("BAABAAcAAAAHAAEAAQADAAIABAADAAEABAAGAAUABgAEAAcA"),
 "material": ExtResource("2"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 8,
-"vertex_data": PackedByteArray(106, 147, 254, 255, 135, 2, 254, 127, 39, 67, 247, 238, 186, 2, 254, 127, 0, 0, 205, 128, 73, 1, 254, 127, 21, 36, 233, 36, 90, 0, 254, 127, 234, 161, 0, 0, 0, 0, 254, 127, 246, 235, 165, 54, 217, 0, 254, 127, 255, 255, 228, 122, 31, 1, 254, 127, 26, 240, 234, 187, 78, 1, 254, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255)
+"vertex_data": PackedByteArray("apP+/4cC/n8nQ/fuugL+fwAAzYBJAf5/FSTpJFoA/n/qoQAAAAD+f/brpTbZAP5////keh8B/n8a8Oq7TgH+f/9/////f////3////9/////f////3////9/////f///")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_udcdq")
@@ -149,15 +149,15 @@ initial_velocity_min = 5.0
 initial_velocity_max = 5.0
 gravity = Vector3(0, 1, 0)
 damping_max = 2.0
-scale_min = 0.009999999776482582
-scale_max = 0.009999999776482582
+scale_min = 0.01
+scale_max = 0.01
 scale_curve = SubResource("CurveTexture_60vxl")
 color = Color(1, 1, 0.113725, 1)
 turbulence_enabled = true
-turbulence_noise_strength = 0.10000000149011612
-turbulence_noise_scale = 0.10000000149011612
+turbulence_noise_strength = 0.1
+turbulence_noise_scale = 0.1
 turbulence_influence_min = 0.0
-turbulence_influence_max = 0.009999999776482582
+turbulence_influence_max = 0.01
 turbulence_influence_over_life = SubResource("CurveTexture_mwxtg")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2knnp"]
@@ -175,15 +175,15 @@ particles_anim_loop = false
 resource_name = "particle_circle_particle_circle"
 _surfaces = [{
 "aabb": AABB(-1.15811, -1.02635, -4.7252e-08, 2.17129, 2.09224, 1.00998e-05),
-"attribute_data": PackedByteArray(0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0, 255, 255),
+"attribute_data": PackedByteArray("AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8="),
 "format": 34896613399,
 "index_count": 18,
-"index_data": PackedByteArray(4, 0, 1, 0, 7, 0, 0, 0, 7, 0, 1, 0, 1, 0, 3, 0, 2, 0, 4, 0, 3, 0, 1, 0, 4, 0, 6, 0, 5, 0, 6, 0, 4, 0, 7, 0),
+"index_data": PackedByteArray("BAABAAcAAAAHAAEAAQADAAIABAADAAEABAAGAAUABgAEAAcA"),
 "material": SubResource("StandardMaterial3D_2knnp"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 8,
-"vertex_data": PackedByteArray(106, 147, 254, 255, 135, 2, 254, 127, 39, 67, 247, 238, 186, 2, 254, 127, 0, 0, 205, 128, 73, 1, 254, 127, 21, 36, 233, 36, 90, 0, 254, 127, 234, 161, 0, 0, 0, 0, 254, 127, 246, 235, 165, 54, 217, 0, 254, 127, 255, 255, 228, 122, 31, 1, 254, 127, 26, 240, 234, 187, 78, 1, 254, 127, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255)
+"vertex_data": PackedByteArray("apP+/4cC/n8nQ/fuugL+fwAAzYBJAf5/FSTpJFoA/n/qoQAAAAD+f/brpTbZAP5////keh8B/n8a8Oq7TgH+f/9/////f////3////9/////f////3////9/////f///")
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_udcdq")
@@ -210,7 +210,6 @@ amount = 128
 lifetime = 2.0
 randomness = 1.0
 fixed_fps = 60
-local_coords = true
 draw_order = 3
 process_material = SubResource("ParticleProcessMaterial_5iaqv")
 draw_pass_1 = SubResource("ArrayMesh_cmt5e")

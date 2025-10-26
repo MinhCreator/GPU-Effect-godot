@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxeyfelnwdbpy"]
+
+[ext_resource type="PackedScene" uid="uid://ce0l7sdpyg8kw" path="res://PolyBlocks/EffectBlocks/assets/smoke/smoke_heavy.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://cg8asq50oc2m1" path="res://PolyBlocks/EffectBlocks/assets/smoke/smoke_light.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://c20c16eqqr7kn" path="res://PolyBlocks/EffectBlocks/assets/fire/fire_heavy.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://c54o67tient15" path="res://PolyBlocks/EffectBlocks/assets/fire/fire_light.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://bqhd6yuojmms5" path="res://PolyBlocks/EffectBlocks/assets/fire/fire_magic.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://d0cieuooqjktr" path="res://PolyBlocks/EffectBlocks/assets/smoke/smoke_toxic.tscn" id="6"]
+
+[node name="FireSmokeShowcase" type="Node3D"]
+
+[node name="SmokeBig" parent="." instance=ExtResource("1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -1)
+visibility_aabb = AABB(-4, -4.7323, -4, 8, 8, 8)
+
+[node name="SmokeSmall" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.176133, -1)
+
+[node name="FireBig" parent="." instance=ExtResource("3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.542032, -1)
+
+[node name="FireSmall" parent="." instance=ExtResource("4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.449114, -1)
+
+[node name="FireMagic" parent="." instance=ExtResource("5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.310824, -1)
+
+[node name="SmokeToxic" parent="." instance=ExtResource("6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.207483, -1)

@@ -1,18 +1,21 @@
+
+@tool
 extends GPUParticles3D
 
-@onready var lightning: GPUParticles3D = $"."  # Refers to itself
-
 @export var auto_animate: bool = false
-@export var cooldown_time: float = 2.0
+@export var cooldown: float = 2.0
+var animation_time: float = 0.0
 
-var _timer: float = 0.0
+func _process(delta: float) -> void :
 
-func _process(delta: float) -> void:
-	if auto_animate:
-		_timer -= delta
-		if _timer <= 0.0:
-			lightning.emitting = true
-			_timer = cooldown_time
-	else:
-		if Input.is_action_just_pressed("ui_accept"):
-			lightning.emitting = true
+    if auto_animate:
+        animation_time += delta
+        if animation_time >= cooldown:
+            animation_time = 0.0
+            lightining()
+
+    elif Input.is_action_just_pressed("ui_accept"):
+        lightining()
+
+func lightining():
+    restart()

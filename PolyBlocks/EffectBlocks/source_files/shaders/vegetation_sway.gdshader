@@ -1,4 +1,4 @@
-// polyBlocks vegetation_sway shader
+//vegetation_sway.gdshader - suitable for grass
 
 shader_type spatial;
 

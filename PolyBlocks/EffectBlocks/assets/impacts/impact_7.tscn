@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://2rki6j6j0bnu"]
 
 [ext_resource type="Texture2D" uid="uid://cxi3r0ixcouwu" path="res://PolyBlocks/EffectBlocks/source_files/textures/icons/star.png" id="1"]
-[ext_resource type="Script" path="res://PolyBlocks/EffectBlocks/source_files/scripts/impact_single.gd" id="2"]
+[ext_resource type="Script" uid="uid://cxemmw5paqqjp" path="res://PolyBlocks/EffectBlocks/source_files/scripts/impact_single.gd" id="2"]
 
 [sub_resource type="Curve" id="Curve_dldii"]
-max_value = 5.0
+_limits = [0.0, 5.0, 0.0, 1.0]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.235075, 4.98572), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 3
 
@@ -20,13 +20,13 @@ curve = SubResource("Curve_7aw0e")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_3fat8"]
 emission_shape = 1
-emission_sphere_radius = 0.4000000059604645
+emission_sphere_radius = 0.4
 angle_max = 90.0
 angular_velocity_min = 60.0
 angular_velocity_max = 60.0
 gravity = Vector3(0, 0, 0)
-scale_min = 0.20000000298023224
-scale_max = 0.4000000059604645
+scale_min = 0.2
+scale_max = 0.4
 scale_curve = SubResource("CurveTexture_vpvq1")
 color = Color(26.619, 20.144, 0, 1)
 emission_curve = SubResource("CurveTexture_jghbt")
@@ -39,7 +39,7 @@ albedo_color = Color(0.152941, 0.356863, 0.431373, 0.188235)
 albedo_texture = ExtResource("1")
 emission_enabled = true
 emission = Color(0.988235, 0.329412, 0.109804, 1)
-emission_energy_multiplier = 2.7200000286102295
+emission_energy_multiplier = 2.72
 billboard_mode = 3
 billboard_keep_scale = true
 particles_anim_h_frames = 1

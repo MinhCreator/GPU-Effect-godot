@@ -86,7 +86,7 @@ modulate = Color(0.335127, 0.110658, 0.455009, 1)
 [node name="Decal_Crack_4" parent="Ground2/Decals" instance=ExtResource("9")]
 transform = Transform3D(0.185033, 0, 0.982733, 0, 1, 0, -0.982733, 0, 0.185033, -0.167062, -1.00583e-07, 3.138)
 texture_emission = ExtResource("10")
-emission_energy = 2.319999933242798
+emission_energy = 2.32
 modulate = Color(0, 2, 1, 1)
 
 [node name="Decal_Footprint_1" parent="Ground2/Decals" instance=ExtResource("11")]

@@ -1,36 +1,37 @@
-GDRE Tools v1.0.0-beta.2
-Windows 10.0.19045, GeForce GT 730, opengl3
-Opening file: C:/Users/Administrator/Documents/daily tool/EffectBlocks - Demo (Preview)/EffectBlocks - Demo (Preview)/EffectBlocks-Demo.pck
-Guessing bytecode revision from engine version: 4.2.2 (rev 0x77af6ca)
-Verified 299 files, no errors detected!
-Extracted 299 files, no errors detected!
-Exporting resources in parallel...
-Saved project config project.godot.
+GDRE Tools v2.0.0
+Windows 10.0.26100, NVIDIA GeForce RTX 4060 Laptop GPU, vulkan
+Opening file: C:/Users/Administrator/Desktop/PolyBlocks_EffectBlocks_v3_Preview/PolyBlocks_EffectBlocks_v3.pck
+Loaded 234 imported files
+Detected Engine Version: 4.4.1
+Detected Bytecode Revision: 4.3.0-stable (77af6ca)
+Verified 528 files, no errors detected!
+Extracted 528 files, no errors detected!
+
+Exporting scenes...
+*** Exporting 5 scenes took 0.75s
+
+Saved project config.
 
 
 ********************************EXPORT REPORT********************************
 
 Totals:                                 
-Decompiled scripts:                     0
+Decompiled scripts:                     22
 Failed scripts:                         0
-Imported resources for export session:  122
-Successfully converted:                 122
-Lossy:                                  1
-Rewrote metadata:                       39
+Imported resources for export session:  234
+Successfully converted:                 234
+Lossy:                                  2
+Rewrote metadata:                       96
 Non-importable conversions:             0
 Not converted:                          0
 Failed conversions:                     0
 -------------
 
 
-The following files were converted from an import that was stored lossy.
-You may lose fidelity when re-importing these files upon loading the project.
-res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex to res://icon.svg
-
 
 ------------------------------------------------------------------------------------
 
-Use Godot editor version 4.2.2 to edit the project.
+Use Godot editor version 4.4.1 to edit the project.
 Note: the project may be using a custom version of Godot. Detection for this has not been implemented yet.
 If you find that you have many non-import errors upon opening the project 
 (i.e. scripts or shaders have many errors), use the original game's binary as the export template.

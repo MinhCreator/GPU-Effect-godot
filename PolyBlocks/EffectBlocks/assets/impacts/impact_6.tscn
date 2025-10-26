@@ -1,11 +1,11 @@
 [gd_scene load_steps=18 format=3 uid="uid://bdfdt8mjkoc66"]
 
-[ext_resource type="Script" path="res://PolyBlocks/EffectBlocks/source_files/scripts/impacts.gd" id="1"]
+[ext_resource type="Script" uid="uid://byh8nwqx0jsmb" path="res://PolyBlocks/EffectBlocks/source_files/scripts/impacts.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://1poghguxi8an" path="res://PolyBlocks/EffectBlocks/source_files/textures/explosion_1.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://d1e7hll0hnmad" path="res://PolyBlocks/EffectBlocks/source_files/textures/circle_1.png" id="3"]
 
 [sub_resource type="Curve" id="Curve_dldii"]
-max_value = 5.0
+_limits = [0.0, 5.0, 0.0, 1.0]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.235075, 4.98572), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 3
 
@@ -37,7 +37,7 @@ vertex_color_use_as_albedo = true
 albedo_texture = ExtResource("2")
 emission_enabled = true
 emission = Color(0.988235, 0.329412, 0.109804, 1)
-emission_energy_multiplier = 2.7200000286102295
+emission_energy_multiplier = 2.72
 billboard_mode = 3
 billboard_keep_scale = true
 particles_anim_h_frames = 1
@@ -49,7 +49,7 @@ material = SubResource("StandardMaterial3D_84m6e")
 size = Vector2(0.6, 0.6)
 
 [sub_resource type="Curve" id="Curve_3x440"]
-max_value = 5.0
+_limits = [0.0, 5.0, 0.0, 1.0]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.0876866, 4.98572), 0.0, 0.0, 0, 0, Vector2(0.682836, 5), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 4
 
@@ -65,8 +65,8 @@ curve = SubResource("Curve_3h214")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_0er4b"]
 gravity = Vector3(0, 0, 0)
-scale_min = 0.30000001192092896
-scale_max = 0.30000001192092896
+scale_min = 0.3
+scale_max = 0.3
 scale_curve = SubResource("CurveTexture_c1wei")
 color = Color(0.372073, 0.760933, 0.0869638, 1)
 emission_curve = SubResource("CurveTexture_rnqwk")
@@ -109,4 +109,4 @@ draw_pass_1 = SubResource("QuadMesh_7mrii")
 [node name="Light" type="OmniLight3D" parent="."]
 light_color = Color(0.14902, 0.658824, 0, 1)
 light_energy = 3.0
-omni_range = 0.20000000298023224
+omni_range = 0.2
